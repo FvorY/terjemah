@@ -26,7 +26,7 @@ if($method == 'POST'){
 		$asal = $obj_language_from->lang;
 
 //jawaban dukungan bahasa
-		if($kode_bahasa != 'null'){
+		if($kode_bahasa == 'null'){
       //kalau bahasa tidak di dukung
 			$hasil = 'Maaf aku belom bisa, aku harus banyak belajar lagi :(';
 		}else {
