@@ -28,7 +28,7 @@ if($method == 'POST'){
 //jawaban dukungan bahasa
 		if($kode_bahasa == 'null'){
       //kalau bahasa tidak di dukung
-			$hasil = 'sorry, aku belum bisa kalau pake bahasa itu, mungkin besok udah bisa :v';
+			$hasil = 'Maaf aku belom bisa translate, aku harus banyak belajar lagi :(';
 		}else {
       // kalau bahasa di dukung
       //kirim data ke yandx
