@@ -26,9 +26,9 @@ if($method == 'POST'){
 		$asal = $obj_language_from->lang;
 
 //jawaban dukungan bahasa
-		if($kode_bahasa == 'null'){
+		if($kode_bahasa != 'null'){
       //kalau bahasa tidak di dukung
-			$hasil = 'Maaf aku belom bisa, aku harus banyak belajar lagi :( <br><br> *Shyerin (Bot)';
+			$hasil = 'Maaf aku belom bisa, aku harus banyak belajar lagi :(';
 		}else {
       // kalau bahasa di dukung
       //kirim data ke yandx
@@ -38,7 +38,7 @@ if($method == 'POST'){
       //ubah ke json
       $obj = json_decode($url);
 			// dapat hasiknya
-			$hasil = $obj->text[0] . '<br><br> *Shyerin (Bot)';
+			$hasil = $obj->text[0];
 		}
 
     //balas ke dialogflow
